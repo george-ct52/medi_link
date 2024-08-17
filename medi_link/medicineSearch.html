@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+   <script src=""></script>
+    <style>
+        .map-container {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header clas="bg-opacity-70">
+        <div class="logo">Medi-Link</div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/medicineSearch.html" class="hover:text-gray-300">Search Medicine</a></li>
+            </ul> 
+        </nav>
+    </header>
+    
+    <main class=" bg-medicine  h-screen pt-16 p-8">
+        <section class="flex space-x-8">
+            <!-- Left Side -->
+            <div class="flex-1 p-4 text-white">
+                <h1 class="text-2xl font-bold mb-4">Find Medicine</h1>
+                <form id="search-form" class="space-y-4">
+                    <div>
+                        <label for="medicine" class="block text-lg font-medium">Medicine Name</label>
+                        <input type="text" id="medicine" name="medicine" class="mt-1 block w-full p-2 border text-black border-gray-300 rounded" placeholder="Enter medicine name">
+                    </div>
+                    <div>
+                        <label for="location" class="block text-lg font-medium">Your Location</label>
+                        <input type="text" id="location" name="location" class="mt-1 block w-full p-2 border text-black border-gray-300 rounded" placeholder="Enter your location">
+                    </div>
+                    <button type="submit" class="bg-white  text-black p-2 rounded">Search</button>
+                </form>
+            </div>
+            <!-- Right Side -->
+            <div class="flex-1 p-4 text-black">
+                <h1 class="text-2xl font-bold mb-4 text-white">Nearest Locations</h1>
+                <div id="location-list" class="space-y-4">
+                    <!-- Initial dummy content -->
+                    <div class=" p-4  rounded">
+                        <p class="text-white">Please search for a medicine to see the nearest locations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #000000, #6326d0); /* Gradient background for the body */
+    
+}
+
+.auth-container {
+    background:radial-gradient(to right, #CBC3E3, #9370DB );
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.auth-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; /* Center elements horizontally */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: white;
+    text-align: center; /* Center label text */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+    background: linear-gradient(to right,  #cec6d5, white); /* Gradient background for inputs */
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #301b6e, #6326d0); /* Gradient background for buttons */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #6326d0, #301b6e); /* Gradient background on hover */
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-prompt {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-prompt p {
+    margin: 0;
+    font-size: 1em;
+    color: white;
+}
+
+.login-prompt button {
+    background: linear-gradient(to right, #301b6e, #6326d0); /* Gradient background for login button */
+    color: white;
+}
+
+.login-prompt button:hover {
+    background: linear-gradient(to right, #6326d0, #301b6e); /* Gradient background on hover */
+}

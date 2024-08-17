@@ -1,0 +1,39 @@
+New! Keyboard shortcuts … Drive keyboard shortcuts have been updated to give you first-letters navigation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Sign Up Section -->
+        <div id="signUpSection" class="auth-section">
+            <h2>Sign Up</h2>
+            <form id="signUpForm">
+                <div class="form-group">
+                    <label for="signUpUsername">Username:</label>
+                    <input type="text" id="signUpUsername" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="signUpPassword">Password:</label>
+                    <input type="password" id="signUpPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p id="signUpError" class="error-message"></p>
+                <div class="login-prompt">
+                    <p>Already have an account? <br>Log in!</p>
+                    <button type="button" id="loginRedirectButton">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
